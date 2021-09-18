@@ -1,7 +1,13 @@
+<div class="flex flex-wrap">
+  <% @artists.each do |artist|  %>
+    <h1 class="px-16 py-16 uppercase"><%= artist.name %></h1>
+  <% end %>
+</div>
 
 <% @artists.each do |artist|  %>
   <div class="py-2">
-    <h1 class="uppercase"><%= artist.name %></h1>
+    <h1 class="uppercase pb-10"><%= artist.name %></h1>
     <img src="<%= artist.about %>">
   </div>
 <% end %>
+
