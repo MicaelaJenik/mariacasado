@@ -1,2 +1,6 @@
 <h1>Artworks#index</h1>
+<%= simple_form_for @artworks do |f| %>
+  <%= f.input :photo, as: :file %>
+  <%= f.button :submit %>
+<% end %>
 <p>Find me in app/views/artworks/index.html.erb</p>
