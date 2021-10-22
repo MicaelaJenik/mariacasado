@@ -1,15 +1,18 @@
-<!-- <div class= "container-index"> -->
-
+  <div class="flex flex-wrap">
     <% @artists.each do |artist|  %>
-      <div class="row first-row">
-        <div id="first-box">
-          <p class="artist-title"><%= link_to "#{artist.name}", artist_path(artist)  %></p>
-          <!-- <div> -->
-            <%# <%= image_tag "https://images.unsplash.com/photo-1533231681263-76328007f383?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNxdWFyZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" %> %>
-          <!-- </div> -->
-        </div>
+      <div class="px-12">
+        <p class="uppercase text-2xl font-light py-10"><%= link_to "#{artist.name}", artist_path(artist)  %></p>
+        <div style="height: 400px; position: cover; width: 350px;"><%= image_tag "#{artist.about}" %></div>
       </div>
-      <% end %>
+    <% end %>
+  </div>
 
-<!-- </div> -->
+
+
+
+  <!-- <div class= "container-index"> -->
+    <!-- <div> -->
+      <%# <%= image_tag "https://images.unsplash.com/photo-1533231681263-76328007f383?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNxdWFyZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" %>
+      <!-- </div> -->
+      <!-- </div> -->
 
