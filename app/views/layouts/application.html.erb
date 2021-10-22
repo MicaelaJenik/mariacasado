@@ -16,17 +16,23 @@
   </head>
 
   <body>
-    <div class="flex-grow-1" style=" min-height: 100vh; display: flex; flex-direction: column;">
 
-      <div class="general-indentation">
-        <%= render 'shared/navbar' %>
+    <% if content_for? :menu %>
 
       <%= yield %>
+
+    <% else %>
+      <div class="flex-grow-1" style=" min-height: 100vh; display: flex; flex-direction: column;">
+
+        <div class="general-indentation">
+          <%= render 'shared/navbar' %>
+
+        <%= yield %>
+        </div>
+
+        <%= render 'shared/footer' %>
+
       </div>
-
-      <%= render 'shared/footer' %>
-
-    </div>
-
+    <% end %>
   </body>
 </html>

@@ -1,11 +1,11 @@
-  <div class="flex flex-wrap">
-    <% @artists.each do |artist|  %>
-      <div class="px-12">
-        <p class="uppercase text-2xl font-light py-10"><%= link_to "#{artist.name}", artist_path(artist)  %></p>
-        <div style="height: 400px; position: cover; width: 350px;"><%= image_tag "#{artist.about}" %></div>
-      </div>
-    <% end %>
-  </div>
+<div class="flex flex-wrap justify-between">
+  <% @artists.each do |artist|  %>
+    <div class="randomize" style="max-height: 28%;  max-width: 28%; padding-bottom: 1%;">
+      <p class="uppercase text-2xl font-light py-10"><%= link_to "#{artist.name}", artist_path(artist)  %></p>
+      <div><%= image_tag "#{artist.about}" %></div>
+    </div>
+  <% end %>
+</div>
 
 
 
