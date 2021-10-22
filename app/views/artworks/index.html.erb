@@ -1,5 +1,5 @@
 <h1>Artworks#index</h1>
-<%= simple_form_for @artworks do |f| %>
+<%= simple_form_for  [@artist, @artworks] do |f| %>
   <%= f.input :photo, as: :file %>
   <%= f.button :submit %>
 <% end %>

@@ -2,11 +2,11 @@ class Artwork < ApplicationRecord
   belongs_to :artist
   has_many_attached :photos
 
-  include ForestLiana::Collection
+  # include ForestLiana::Collection
 
-  collection :Company
+  # collection :Company
 
-  action 'Mark as Live'
+  # action 'Mark as Live'
 
 end
 

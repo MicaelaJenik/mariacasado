@@ -9,6 +9,7 @@ class ArtworksController < ApplicationController
   end
 
   def create
+    @artist = Artist.find(params[:id])
     @artwork = Artwork.new(artwork_params)
     @artwork.save
 
@@ -23,6 +24,8 @@ class ArtworksController < ApplicationController
   end
 
   def artwork_params
-  params.require(:artworks).permit(:description, :height, :photo, :name)
+  params.require(:artworks).permit(:title, :year, :height, :width, :depth, :technique, :about, :description, :period, :photo, :artist_id)
   end
 end
+
+

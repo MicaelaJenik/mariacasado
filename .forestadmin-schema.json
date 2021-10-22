@@ -452,7 +452,7 @@
       "is_required": false,
       "is_sortable": true,
       "is_virtual": false,
-      "reference": "Company.id",
+      "reference": "Artwork.id",
       "inverse_of": "artist",
       "relationship": "HasMany",
       "widget": null,
@@ -509,11 +509,11 @@
     "segments": [],
     "actions": []
   }, {
-    "name": "Company",
-    "name_old": "Company",
+    "name": "Artwork",
+    "name_old": "artworks",
     "icon": null,
     "is_read_only": false,
-    "is_searchable": false,
+    "is_searchable": true,
     "is_virtual": false,
     "only_for_relationships": false,
     "pagination_type": "page",
@@ -747,20 +747,7 @@
       "validations": []
     }],
     "segments": [],
-    "actions": [{
-      "name": "Mark as Live",
-      "type": "bulk",
-      "base_url": null,
-      "endpoint": "forest/actions/mark-as-live",
-      "http_method": "POST",
-      "redirect": null,
-      "download": false,
-      "fields": [],
-      "hooks": {
-        "load": false,
-        "change": []
-      }
-    }]
+    "actions": []
   }, {
     "name": "Fair",
     "name_old": "fairs",
