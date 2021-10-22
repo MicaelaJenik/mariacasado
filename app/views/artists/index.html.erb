@@ -1,13 +1,14 @@
-<div class="flex flex-wrap">
-  <% @artists.each do |artist|  %>
-    <h1 class="px-16 py-16 uppercase"><%= artist.name %></h1>
-  <% end %>
-</div>
-
-<% @artists.each do |artist|  %>
-  <div class="py-2">
-    <h1 class="uppercase pb-10"><%= artist.name %></h1>
-    <img src="<%= artist.about %>">
+<div class= "container-index">
+  <div class="flex flex-wrap">
+    <% @artists.each do |artist|  %>
+      <div class= "row first-row">
+        <div id = "first-box">
+          <p class="artist-title"><%= link_to "#{artist.name}", artist_path(artist)  %></p>
+          <div class= "">
+            <%# <%= image_tag "https://images.unsplash.com/photo-1533231681263-76328007f383?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNxdWFyZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" %> %>
+          </div>
+        </div>
+    <% end %>
   </div>
-<% end %>
+</div>
 

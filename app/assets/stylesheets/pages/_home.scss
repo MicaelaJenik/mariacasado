@@ -1,1 +1,33 @@
 // Specific CSS for your home-page
+.container-index {
+  padding: 8vw;
+}
+
+.first-row {
+  flex-wrap: wrap;
+}
+
+.artist-title {
+  padding: 1rem;
+  font-size: 12px;
+}
+
+.first-box {
+  border: solid;
+  border-width: 2px;
+  height:25vw;
+  width:20vw;
+  margin-bottom:15px;
+
+  img {
+
+  }
+}
+
+ .second-box {
+  border: solid;
+  border-width: 2px;
+  height:30vw;
+  width:20vw;
+  margin-bottom:15px;
+ }
