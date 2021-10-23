@@ -1,0 +1,5 @@
+<div class="flex flex-wrap">
+  <% @fairs.each do |fair|  %>
+    <h1 class="px-16 py-16 uppercase"><%= link_to fair.title, fair_path(fair) %></h1>
+  <% end %>
+</div>

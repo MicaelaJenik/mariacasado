@@ -3,9 +3,10 @@ Rails.application.routes.draw do
   root to: 'artists#index'
   get 'press', to: 'pages#press'
   get 'welcome', to: 'pages#welcome'
-  resources :artists
-  resources :artworks
-  resources :shows
+  resources :artists, only: [:index, :show]
+  resources :fairs, only: [:index, :show]
+  resources :artworks, only: [:index, :show]
+  resources :shows, only: [:index, :show]
   resources :art
-  # resources :fairs
+
 end
