@@ -1,2 +1,10 @@
-<h1>Shows#index</h1>
-<p>Find me in app/views/shows/index.html.erb</p>
+
+
+<div class="flex flex-wrap">
+  <% @shows.each do |show|  %>
+  <div class="w-1/2">
+    <h1 class="uppercase"><%= link_to "#{show.title}", show_path(show)  %></h1>
+    <h1><%= show.about  %></h1>
+  </div>
+  <% end %>
+</div>
