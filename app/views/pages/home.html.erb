@@ -1,0 +1,17 @@
+<%= content_for :menu do %>
+""
+<% end %>
+
+<div class="bg-gray-800 h-screen">
+  <div class="flex-grow letters logo-navbar pt-1 pb-2"><%= link_to(image_tag("a.png"), artists_path) %></div>
+  <div class="flex flex-wrap space-between">
+    <div class="flex-grow letters logo-navbar pt-1 pb-2"><%= link_to(image_tag("p.png"), artists_path) %></div>
+    <div class="flex-grow letters logo-navbar pt-1 pb-2"><%= link_to(image_tag("f.png"), artists_path) %></div>
+    <div class="flex-grow letters logo-navbar pt-1 pb-2"><%= link_to(image_tag("n.png"), artists_path) %></div>
+  </div>
+  <div class="flex flex-wrap">
+    <div class="flex-grow letters logo-navbar pt-1 pb-2"><%= link_to(image_tag("c.png"), artists_path) %></div>
+    <div class="flex-grow letters logo-navbar pt-1 pb-2"><%= link_to(image_tag("r.png"), artists_path) %></div>
+    <div class="flex-grow letters logo-navbar pt-1 pb-2"><%= link_to(image_tag("m.png"), artists_path) %></div>
+  </div>
+</div>

@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   mount ForestLiana::Engine => '/forest'
-  root to: 'artists#index'
+  root to: 'pages#home'
   get 'press', to: 'pages#press'
-  get 'welcome', to: 'pages#welcome'
+  get 'nosotros', to: 'pages#nosotros'
   resources :artists
   resources :artworks
   resources :shows
