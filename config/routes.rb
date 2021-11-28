@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'staffs/index'
+  get 'staffs/show'
   mount ForestLiana::Engine => '/forest'
   root to: 'pages#home'
   get 'press', to: 'pages#press'
