@@ -1,5 +1,6 @@
 class ShowsController < ApplicationController
   before_action :set_shows
+  before_action :set_show
 
   def index
     @shows = Show.all
@@ -15,4 +16,6 @@ class ShowsController < ApplicationController
   def set_shows
   end
 
+  def set_show
+  end
 end

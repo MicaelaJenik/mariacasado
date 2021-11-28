@@ -1,10 +1,33 @@
+<div style="padding-top: 10%;">
 
-
-<div class="flex flex-wrap">
-  <% @shows.each do |show|  %>
-  <div class="w-1/2">
-    <h1 class="uppercase"><%= link_to "#{show.title}", show_path(show)  %></h1>
-    <h1><%= show.about  %></h1>
+  <div class="flex justify-center">
+    <div class="pr-12">
+      <div class="pb-12"><%= image_tag asset_path('yellowLine.png')%></div>
+      <h2 class="text-5xl mt-3 text-semibold uppercase">VUELVO ENSEGUIDA</h2>
+      <h2 class="text-5xl mt-3 font-extralight uppercase">TRIANA LEBORANSN</h2>
+      <h2 class="text-5xl mt-3 font-extralight">Curaduria Violeta Mollo</h2>
+    </div>
+    <div class="pl-12">
+      <div class="relative">
+        <div style="height: 550px; width: 550px;"><%= image_tag asset_path('actual')%></div>
+        <div class="absolute top-0 left-0 bg-yellow-400">
+          <p class="mx-6 my-1 font-semibold">actual</p>
+        </div>
+      </div>
+    </div>
   </div>
-  <% end %>
+
+  <div style="padding-left: 10%; padding-right: 10%; padding-top: 12%;">
+    <div class="flex flex-wrap">
+      <% @shows.each do |show|  %>
+      <div class="w-1/2" style="padding-bottom: 10%;">
+        <div class="px-6 py-1 font-semibold bg-yellow-400 mb-6" style="width: 15%;"><%=  show.year %></div>
+        <h2 class="text-5xl mt-3 text-semibold uppercase"><%= link_to "#{show.title}", show_path(show)%></h2>
+        <h2 class="text-5xl mt-3 font-extralight"><%= show.about  %></h2>
+      </div>
+      <% end %>
+    </div>
+  </div>
+
 </div>
+

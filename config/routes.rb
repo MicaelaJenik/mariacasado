@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'fairs/index'
+  get 'fairs/show'
   mount ForestLiana::Engine => '/forest'
   root to: 'pages#home'
   get 'press', to: 'pages#press'
@@ -7,5 +9,4 @@ Rails.application.routes.draw do
   resources :artworks
   resources :shows
   resources :staffs
-  # resources :fairs
 end

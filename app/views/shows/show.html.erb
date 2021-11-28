@@ -1,2 +1,28 @@
-<h1>Shows#show</h1>
-<p>Find me in app/views/shows/show.html.erb</p>
+<div style="padding-top: 8%;">
+  <div style="padding-left: 17%;">
+    <div style="padding-bottom: 10%;">
+
+      <h2 class="text-5xl mt-3 text-semibold uppercase">VUELVO ENSEGUIDA</h2>
+      <h2 class="text-5xl mt-3 font-extralight uppercase">TRIANA LEBORANSN</h2>
+      <h2 class="text-5xl mt-3 font-extralight">Curaduria <%= @show.curator %></h2>
+    </div>
+
+<div class="div" style="padding-bottom: 6%;">
+    <div class="py-4">
+      <%= image_tag asset_path('yellowLine.png')%>
+    </div>
+    <h2 class="text-5xl mt-3 text-semibold uppercase">INFO</h2>
+</div>
+
+    <div class="py-4">
+      <%= image_tag asset_path('yellowLine.png')%>
+    </div>
+    <div class="flex">
+      <h2 class="text-5xl mt-3 text-semibold">TEXTO</h2>
+      <h2 class="text-5xl mt-3 font-extralight pl-3"> x <%= @show.curator %></h2>
+    </div>
+
+  </div>
+
+
+</div>
