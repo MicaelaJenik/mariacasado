@@ -1,6 +1,6 @@
-.alert {
-  position: fixed;
-  bottom: 16px;
-  right: 16px;
-  z-index: 1000;
+.nosotros-fondo {
+  background-image: url(image_path('nosotrosFondo.png'));
+  background-size: cover;
+  opacity: 0.9;
+  position: center;
 }
