@@ -1,23 +1,38 @@
 <div style="padding-top: 12%;">
 
-  <div class="flex">
-    <div>
-      <div class="pb-12"><%= image_tag asset_path('yellowLine.png')%></div>
-      <h2 class="text-5xl mt-3 font-medium uppercase">2019</h2>
-    </div>
-  </div>
 
-  <div style="padding-left: 10%; padding-right: 10%; padding-top: 12%;">
-    <div class="flex flex-wrap">
-      <% @carnivals.each do |carnival|  %>
-      <div class="w-1/2" style="padding-bottom: 10%;">
-        <div class="px-6 py-1 font-semibold bg-yellow-400 mb-6" style="width: 15%;"><%=  carnival.year %></div>
-        <h2 class="text-5xl mt-3 text-semibold uppercase"><%= link_to "#{carnival.title}", carnival_path(carnival)%></h2>
-        <h2 class="text-5xl mt-3 font-extralight"><%= carnival.about  %></h2>
+  <% @carnivals.each do |carnival|  %>
+
+  <div class="flex flex-wrap" style="padding-bottom: 12%;">
+
+    <div class="w-1/2">
+      <div class="pb-12"><%= image_tag asset_path('yellowLine.png')%></div>
+      <h2 class="pb-8 text-5xl mt-3 font-medium uppercase">2019</h2>
+
+      <% if carnival.year? :2019 %>
+        <div class="pt-8" style="padding-right: 35%;">
+          <h2 class="text-3xl mt-1 font-light uppercase"><%= link_to "#{carnival.title}", carnival_path(carnival)%></h2>
+          <h2 class="text-base mt-3 font-thin"><%= carnival.catalogue %></h2>
+        </div>
+      <% end %>
+
+    </div>
+
+    <div class="w-1/2">
+      <div class="pb-12"><%= image_tag asset_path('yellowLine.png')%></div>
+      <h2 class="pb-8 text-5xl mt-3 font-medium uppercase">2018</h2>
+
+      <% if carnival.year? :2018 %>
+      <div class="pt-8" style="padding-right: 35%;">
+        <h2 class="text-3xl mt-1 font-light uppercase"><%= link_to "#{carnival.title}", carnival_path(carnival)%></h2>
+        <h2 class="text-base mt-3 font-thin"><%= carnival.catalogue %></h2>
       </div>
       <% end %>
     </div>
+
   </div>
+
+  <% end %>
 
 </div>
 
