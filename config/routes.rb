@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   resources :artists
   resources :artworks
   resources :shows
-  resources :art
-  resources :staff
+  resources :staffs
   # resources :fairs
 end
