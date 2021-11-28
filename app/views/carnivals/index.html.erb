@@ -1,2 +1,23 @@
-<h1>Carnivals#index</h1>
-<p>Find me in app/views/carnivals/index.html.erb</p>
+<div style="padding-top: 12%;">
+
+  <div class="flex">
+    <div>
+      <div class="pb-12"><%= image_tag asset_path('yellowLine.png')%></div>
+      <h2 class="text-5xl mt-3 font-medium uppercase">2019</h2>
+    </div>
+  </div>
+
+  <div style="padding-left: 10%; padding-right: 10%; padding-top: 12%;">
+    <div class="flex flex-wrap">
+      <% @carnivals.each do |carnival|  %>
+      <div class="w-1/2" style="padding-bottom: 10%;">
+        <div class="px-6 py-1 font-semibold bg-yellow-400 mb-6" style="width: 15%;"><%=  carnival.year %></div>
+        <h2 class="text-5xl mt-3 text-semibold uppercase"><%= link_to "#{carnival.title}", carnival_path(carnival)%></h2>
+        <h2 class="text-5xl mt-3 font-extralight"><%= carnival.about  %></h2>
+      </div>
+      <% end %>
+    </div>
+  </div>
+
+</div>
+
