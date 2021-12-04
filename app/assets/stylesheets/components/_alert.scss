@@ -4,3 +4,16 @@
   opacity: 0.9;
   position: center;
 }
+
+.gris-fondo {
+  background-image: url(image_path('grisFondo.png'));
+  background-size: cover;
+  position: center;
+}
+
+
+.amarillo-fondo {
+  background-image: url(image_path('amarilloFondo.png'));
+  background-size: cover;
+  position: center;
+}

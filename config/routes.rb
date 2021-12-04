@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get 'press', to: 'pages#press'
   get 'contacto', to: 'pages#contacto'
+  get 'playlist', to: 'pages#playlist'
   resources :artists
   resources :artworks
   resources :shows

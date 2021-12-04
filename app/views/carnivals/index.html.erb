@@ -1,4 +1,4 @@
-<div style="padding-top: 12%;">
+<div style="padding-top: 12%; padding-left: 4%;">
 
 
   <% @carnivals.each do |carnival|  %>
@@ -9,8 +9,8 @@
       <div class="pb-12"><%= image_tag asset_path('yellowLine.png')%></div>
       <h2 class="pb-8 text-5xl mt-3 font-medium uppercase">2019</h2>
 
-      <% if carnival.year? :2019 %>
-        <div class="pt-8" style="padding-right: 35%;">
+      <% if carnival.year = 2020 %>
+        <div class="pt-6" style="padding-right: 35%;">
           <h2 class="text-3xl mt-1 font-light uppercase"><%= link_to "#{carnival.title}", carnival_path(carnival)%></h2>
           <h2 class="text-base mt-3 font-thin"><%= carnival.catalogue %></h2>
         </div>
@@ -22,8 +22,8 @@
       <div class="pb-12"><%= image_tag asset_path('yellowLine.png')%></div>
       <h2 class="pb-8 text-5xl mt-3 font-medium uppercase">2018</h2>
 
-      <% if carnival.year? :2018 %>
-      <div class="pt-8" style="padding-right: 35%;">
+      <% if carnival.year = 2018 %>
+      <div class="pt-6" style="padding-right: 35%;">
         <h2 class="text-3xl mt-1 font-light uppercase"><%= link_to "#{carnival.title}", carnival_path(carnival)%></h2>
         <h2 class="text-base mt-3 font-thin"><%= carnival.catalogue %></h2>
       </div>

@@ -38,3 +38,37 @@
     font-size: 2rem;
   }
 }
+
+.btn {
+  background-color: white;
+  box-shadow: 0 0 1px;
+  cursor: auto;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-random {
+  background-color: white;
+  box-shadow: 0 0 3px;
+  cursor: auto;
+  border-radius: 60px;
+  cursor: pointer;
+  // background-color: transparent;
+}
+
+
+.btn-round {
+  background-color: white;
+  box-shadow: 0 0 1px;
+  cursor: auto;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-footer {
+  background-color: white;
+  box-shadow: 0 0 0px;
+  cursor: auto;
+  border-radius: 20px;
+  cursor: pointer;
+}

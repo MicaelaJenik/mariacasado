@@ -7,7 +7,7 @@ class CarnivalsController < ApplicationController
     # @actual = Carnival.find()
   end
 
-  def carnival
+  def show
     @carnival = Carnival.find(params[:id])
   end
 
