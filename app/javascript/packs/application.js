@@ -39,3 +39,4 @@ document.addEventListener('turbolinks:load', () => {
 
 import "controllers"
 import 'swiper/swiper-bundle.min.css'
+import 'swiper/css/bundle'

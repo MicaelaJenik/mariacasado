@@ -13,26 +13,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
   </head>
 
   <body>
-
-    <% if content_for? :menu %>
+    <div class="cursor">
+      <% if content_for? :menu %>
 
       <%= yield %>
 
-    <% else %>
+      <% else %>
       <div class="flex-grow-1" style=" min-height: 100vh; display: flex; flex-direction: column;">
 
         <div class="general-indentation">
           <%= render 'shared/navbar' %>
 
-        <%= yield %>
+          <%= yield %>
         </div>
 
         <%= render 'shared/footer' %>
 
       </div>
-    <% end %>
+      <% end %>
+    </div>
   </body>
 </html>

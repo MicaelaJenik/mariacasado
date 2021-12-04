@@ -10,3 +10,18 @@
 .letters {
   height: 2px;
 }
+
+.swiper {
+  width: 1200px;
+  height: 800px;
+}
+
+.cursor {
+  cursor: url(image_path('yellowCircle.png')), auto;
+  &:hover {
+    cursor: url(image_path('yellowCircle.png')), auto;
+  }
+    &:active {
+    cursor: url(image_path('yellowCircle.png')), auto;
+  }
+}
