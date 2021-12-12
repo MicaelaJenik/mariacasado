@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_28_203121) do
+ActiveRecord::Schema.define(version: 2021_12_12_183139) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 2021_11_28_203121) do
     t.string "instagram_url"
     t.string "facebook_url"
     t.string "personal_web_url"
+    t.string "photo"
   end
 
   create_table "artworks", force: :cascade do |t|
