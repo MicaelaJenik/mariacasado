@@ -1,4 +1,4 @@
-<div class="uppercase text-8xl pl-12" style="padding-top: 4%; padding-bottom: 6%; font-weight: 100;"><%= @artist.name %></div>
+<div class="uppercase text-7xl pl-12" style="padding-top: 4%; padding-bottom: 6%; font-weight: 100;"><%= @artist.name %></div>
 
 
 <!-- swiper gem -->
@@ -32,21 +32,18 @@
     <div class="py-4">
       <%= image_tag asset_path('yellowLine.png')%>
     </div>
-    <h2 class="text-5xl mt-3 text-semibold uppercase">BIO</h2>
+    <h2 class="xlarge-thick mt-3 text-semibold uppercase">BIO</h2>
+    <div class="flex">
+      <div><%= image_tag "#{artist.photo}" %></div>
+      <div class="large" style="padding-right: 12%;"><%= @artist.description %></div>
+    </div>
   </div>
 
   <div style="padding-bottom: 6%;">
     <div class="py-4">
       <%= image_tag asset_path('yellowLine.png')%>
     </div>
-    <h2 class="text-5xl mt-3 text-semibold">TEXTOS</h2>
-  </div>
-
-  <div style="padding-bottom: 6%;">
-    <div class="py-4">
-      <%= image_tag asset_path('yellowLine.png')%>
-    </div>
-    <h2 class="text-5xl mt-3 text-semibold">MUESTRAS</h2>
+    <h2 class="xlarge-thick mt-3 text-semibold">MUESTRAS</h2>
   </div>
 
   <div style="padding-bottom: 6%;">

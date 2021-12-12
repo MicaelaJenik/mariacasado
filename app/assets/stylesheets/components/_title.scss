@@ -25,3 +25,13 @@
     cursor: url(image_path('yellowCircle.png')), auto;
   }
 }
+
+.cursor-white {
+  cursor: url(image_path('whiteCircle.png')), auto;
+  &:hover {
+    cursor: url(image_path('whiteCircle.png')), auto;
+  }
+    &:active {
+    cursor: url(image_path('whiteCircle.png')), auto;
+  }
+}

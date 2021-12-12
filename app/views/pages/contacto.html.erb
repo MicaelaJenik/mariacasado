@@ -2,7 +2,7 @@
 ""
 <% end %>
 
-<div class="general-indentation">
+<div class="general-indentation cursor">
   <div class="navbar pt-3">
     <div class="navbar-flex">
       <h1 class="navbar-link font-extralight"><%= link_to "artistas", artists_path %></h1>
@@ -21,15 +21,27 @@
       <div class="py-12 mt-12 w-1/3">
         <%= image_tag asset_path('logoSeparado.png')%>
       </div>
-      <div class="pl-12 text-2xl pt-12">
-        <h3 class="font-thin">VISITAS CON LLAMADA PREVIA</h3>
-        <h3 class="text-semibold">INFO@MARIACASADO.COM.AR </h3>
-        <h3 class="text-semibold">GONZALO@MARIACASADO.COM.AR</h3>
-        <h3 class="font-thin pt-2">+54 9 11 5451 6796</h3>
-        <div class="flex pt-2">
-          <div class="pr-2"><%= image_tag asset_path('insta.png')%></div>
-          <div class="pr-2"><%= image_tag asset_path('fb.png')%></div>
-          <h3 class="font-thin text-sm px-3 py-1 mx-2 btn pr-6">inscribite para recibir nuestras novedades</h3>
+
+      <div class="pl-12 pt-12">
+        <h3 class="middle font-normal">VISITAS CON LLAMADA PREVIA</h3>
+        <h3 class="middle pt-2">INFO@MARIACASADO.COM.AR </h3>
+        <h3 class="middle">+54 9 11 5451 6796</h3>
+        <h3 class="middle pt-2">GONZALO@MARIACASADO.COM.AR</h3>
+        <h3 class="middle">+54 9 11 5451 6796</h3>
+
+        <div class="flex pt-3">
+          <div class="pr-2">
+            <%= link_to href: 'https://www.instagram.com/mariacasado.homegallery/' do %>
+            <%= image_tag 'insta.png'%>
+            <% end %>
+          </div>
+          <div class="pr-2">
+            <%= link_to href: 'https://www.facebook.com/mariacasadoHG/' do %>
+            <%= image_tag 'fb.png'%>
+            <% end %>
+          </div>
+
+          <h3 class="font-thin text-xs px-3 pt-2 mx-2 btn pr-6">inscribite para recibir nuestras novedades</h3>
         </div>
       </div>
     </div>
@@ -38,5 +50,5 @@
 </div>
 
 <div>
-<%= render 'shared/footer' %>
+  <%= render 'shared/footer' %>
 </div>

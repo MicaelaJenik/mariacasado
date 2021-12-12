@@ -3,9 +3,9 @@
   <div class="flex justify-center">
     <div class="pr-12">
       <div class="pb-12"><%= image_tag asset_path('yellowLine.png')%></div>
-      <h2 class="text-5xl mt-3 text-semibold uppercase">VUELVO ENSEGUIDA</h2>
-      <h2 class="text-5xl mt-3 font-extralight uppercase">TRIANA LEBORANSN</h2>
-      <h2 class="text-5xl mt-3 font-extralight">Curaduria Violeta Mollo</h2>
+      <h2 class="xlarge font-normal mt-3 uppercase">VUELVO ENSEGUIDA</h2>
+      <h2 class="xlarge font-extralight mt-3 uppercase">TRIANA LEBORANSN</h2>
+      <h2 class="xlarge font-extralight mt-3">Curaduria Violeta Mollo</h2>
     </div>
     <div class="pl-12">
       <div class="relative">
@@ -22,8 +22,8 @@
       <% @shows.each do |show|  %>
       <div class="w-1/2" style="padding-bottom: 10%;">
         <div class="px-6 py-1 font-semibold bg-yellow-400 mb-6" style="width: 15%;"><%=  show.year %></div>
-        <h2 class="text-5xl mt-3 text-semibold uppercase"><%= link_to "#{show.title}", show_path(show)%></h2>
-        <h2 class="text-5xl mt-3 font-extralight"><%= show.about  %></h2>
+        <h2 class="xlarge font-normal mt-3 uppercase"><%= link_to "#{show.title}", show_path(show)%></h2>
+        <h2 class="xlarge font-extralight mt-3"><%= show.about  %></h2>
       </div>
       <% end %>
     </div>

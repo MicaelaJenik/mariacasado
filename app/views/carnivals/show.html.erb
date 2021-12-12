@@ -1,8 +1,8 @@
 <div style="padding-top: 8%;">
   <div style="padding-left: 10%;">
     <div class ="flex" style="padding-bottom: 10%;">
-      <h2 class="text-5xl mt-3 text-semibold uppercase"><%= @carnival.title %></h2>
-      <h2 class="text-5xl mt-3 font-extralight uppercase pl-4"><%= @carnival.year %></h2>
+      <h2 class="xxlarge-thick mt-3 uppercase"><%= @carnival.title %></h2>
+      <h2 class="xlarge mt-3 font-extralight uppercase pl-4"><%= @carnival.year %></h2>
     </div>
   </div>
 
@@ -12,19 +12,19 @@
         <%= image_tag asset_path('yellowLine.png')%>
       </div>
 
-      <h2 class="text-5xl mt-3 text-semibold uppercase">INFO</h2>
-      <h2 class="text-3xl mt-3 font-extralight pt-4"><%= @carnival.title %></h2>
-      <h2 class="text-3xl font-extralight"><%= @carnival.year %></h2>
-      <h2 class="text-3xl font-extralight"><%= @carnival.mmonth %></h2>
-      <h2 class="text-3xl font-extralight"><%= @carnival.location %></h2>
+      <h2 class="xlarge-thick mt-3 uppercase">INFO</h2>
+      <h2 class="large mt-3 font-extralight pt-4"><%= @carnival.title %></h2>
+      <h2 class="large font-extralight"><%= @carnival.year %></h2>
+      <h2 class="large font-extralight"><%= @carnival.mmonth %></h2>
+      <h2 class="large font-extralight"><%= @carnival.location %></h2>
 
     </div>
-    <div style="padding-bottom: 6%;">
+    <div style="padding-bottom: 6%; padding-right: 12%;">
       <div class="py-4 pb-5">
         <%= image_tag asset_path('yellowLine.png')%>
       </div>
-      <h2 class="text-5xl mt-3 text-semibold">Artistas</h2>
-      <h2 class="text-3xl mt-3 font-extralight"><%= @carnival.catalogue %></h2>
+      <h2 class="xlarge-thick mt-3 uppercase">Artistas</h2>
+      <h2 class="large mt-5 font-extralight"><%= @carnival.catalogue %></h2>
     </div>
 
     <div style="padding-bottom: 6%;">

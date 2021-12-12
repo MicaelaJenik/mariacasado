@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Mariacasado</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Mariacasado</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script>
 
+    function hide(id) {
+      document.getElementById(id).style.visibility = "hidden";
+    }
+    function show(id) {
+      document.getElementById(id).style.visibility = "visible";
+    }
 
-  </head>
+  </script>
 
-  <body>
-    <div class="cursor">
-      <% if content_for? :menu %>
+</head>
 
+<body>
+  <div>
+
+    <% if content_for? :menu %>
       <%= yield %>
+    <% else %>
+    <div class="cursor">
 
-      <% else %>
-      <div class="flex-grow-1" style=" min-height: 100vh; display: flex; flex-direction: column;">
+    <div class="flex-grow-1" style=" min-height: 100vh; display: flex; flex-direction: column;">
 
-        <div class="general-indentation">
-          <%= render 'shared/navbar' %>
+      <div class="general-indentation">
+        <%= render 'shared/navbar' %>
 
-          <%= yield %>
-        </div>
-
-        <%= render 'shared/footer' %>
-
+        <%= yield %>
       </div>
-      <% end %>
+
+      <%= render 'shared/footer' %>
+
     </div>
-  </body>
+    </div>
+    <% end %>
+  </div>
+</body>
 </html>
