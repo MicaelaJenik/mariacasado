@@ -1,5 +1,6 @@
 class ArtistsController < ApplicationController
   before_action :set_artists
+  # has_many :artworks
 
   def index
     @artists = Artist.all

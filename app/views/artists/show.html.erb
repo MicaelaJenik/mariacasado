@@ -1,29 +1,11 @@
 <div class="uppercase text-7xl pl-12" style="padding-top: 4%; padding-bottom: 6%; font-weight: 100;"><%= @artist.name %></div>
 
 
-<!-- swiper gem -->
-<div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <%@artist.photos.each  do |photo|  %>
-    <div class="swiper-slide">
-      <%= image_tag 'photo' %>
-    </div>
-    <% end %>
+<div class="flex" style="padding-bottom: 6%;">
+<% @artist.artworks.each do |artwork| %>
+  <div class="px-12"><%= image_tag "#{artwork.about}", :style => "height :600px; width 600px;"  %></div>
+<% end %>
   </div>
-
-  <!-- If we need pagination -->
-  <!-- div class="swiper-pagination"></!-->
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-</div>
-
-<!-- placeholder de carrousel de fotos -->
-<!-- averiguar como hacer para que esta seccion (el carrousel) no herede los margenes, como hacer para que quede fuera de la regla de margenes de todo el resto -->
-
 
 
 <div style="padding-left: 17%;">
@@ -33,7 +15,7 @@
       <%= image_tag asset_path('yellowLine.png')%>
     </div>
     <h2 class="xlarge-thick mt-3 text-semibold uppercase">BIO</h2>
-    <div class="flex">
+    <div class="flex pt-8">
       <div class="w-1/4"><%= image_tag "#{@artist.photo}" %></div>
       <div class="w-3/4 middle ml-12" style="padding-right: 12%;"><%= @artist.description %></div>
     </div>
