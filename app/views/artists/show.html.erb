@@ -2,34 +2,37 @@
 
 
 <div class="flex" style="padding-bottom: 6%;">
-<% @artist.artworks.each do |artwork| %>
+  <% @artist.artworks.each do |artwork| %>
   <div class="px-12"><%= image_tag "#{artwork.about}", :style => "height :600px; width 600px;"  %></div>
-<% end %>
-  </div>
-
+  <% end %>
+</div>
 
 <div style="padding-left: 17%;">
 
   <div style="padding-bottom: 6%;">
-    <div class="py-4">
+    <div class="pt-12 pb-8">
       <%= image_tag asset_path('yellowLine.png')%>
     </div>
-    <h2 class="xlarge-thick mt-3 text-semibold uppercase">BIO</h2>
-    <div class="flex pt-8">
-      <div class="w-1/4"><%= image_tag "#{@artist.photo}" %></div>
-      <div class="w-3/4 middle ml-12" style="padding-right: 12%;"><%= @artist.description %></div>
+    <div class="dropdown">
+      <span class="xlarge-thick mt-3 text-semibold uppercase">BIO</span>
+      <div class="dropdown-content">
+        <div class="flex pt-8">
+          <div class="w-1/4"><%= image_tag "#{@artist.photo}" %></div>
+          <div class="w-3/4 middle ml-12" style="padding-right: 12%;"><%= @artist.description %></div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div style="padding-bottom: 6%;">
+<!--   <div style="padding-bottom: 6%;">
     <div class="py-4">
       <%= image_tag asset_path('yellowLine.png')%>
     </div>
     <h2 class="xlarge-thick mt-3 text-semibold">MUESTRAS</h2>
-  </div>
+  </div> -->
 
   <div style="padding-bottom: 6%;">
-    <div class="pt-4 pb-5">
+    <div class="pt-4 pb-8">
       <%= image_tag asset_path('yellowLine.png')%>
     </div>
     <div class="flex items-center pt-2">
@@ -41,7 +44,6 @@
       </div>
       <div class="px-2 py-2 btn-round mr-2"><%= image_tag asset_path('instaArtista.png')%></div>
       <div class="px-2 py-2 btn-round mr-2"><%= image_tag asset_path('pagArtista.png')%></div>
-      <div class="px-2 py-2 btn-round mr-2"><%= image_tag asset_path('fbArtista.png')%></div>
     </div>
   </div>
 
