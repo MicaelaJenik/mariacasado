@@ -18,6 +18,8 @@
 
 .cursor {
   cursor: url(image_path('yellowCircle.png')), auto;
+  height: 65px;
+  widows: 65px;
   &:hover {
     cursor: url(image_path('yellowCircle.png')), auto;
   }

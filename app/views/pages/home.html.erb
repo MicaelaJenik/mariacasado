@@ -7,11 +7,11 @@
 
   <a>
     <div class="flex items-stetch">
-      <div onMouseOut="hide('a')" onMouseOver="show('a')" style="padding-left: 23%; padding-top: 5%">
+      <div onMouseOut="hide('a')" onMouseOver="show('a')">
         <%= link_to(image_tag("a.png"), artists_path) %>
       </div>
       <div class="self-end">
-        <div class="large" id="a"><%= link_to "rtistas", artists_path %></div>
+        <div class="large" id="a"><%= link_to(image_tag("rtistas.png"), artists_path) %></div>
       </div>
     </div>
   </a>
@@ -19,31 +19,31 @@
   <div class="flex flex-wrap space-between" style="padding-top: 2%">
 
     <a class="flex items-stetch">
-      <div onMouseOut="hide('p')" onMouseOver="show('p')" style="padding-left: 10%; padding-top: 5%;">
+      <div onMouseOut="hide('p')" onMouseOver="show('p')">
         <%= link_to(image_tag("p.png"), playlist_path) %>
       </div>
       <div class="self-end">
-        <div class="large" id="p"><%= link_to "laylist", playlist_path %></div>
+        <div class="large" id="p"><%= link_to(image_tag("rtistas.png"), playlist_path) %></div>
       </div>
     </a>
 
     <a class="flex items-stetch">
-      <div onMouseOut="hide('f')" onMouseOver="show('f')" style="padding-left: 21%; padding-top: 5%">
+      <div onMouseOut="hide('f')" onMouseOver="show('f')">
         <%= link_to(image_tag("f.png"), carnivals_path) %>
       </div>
 
       <div class="self-end">
-        <div class="large" id="f"> <%= link_to "erias", carnivals_path %> </div>
+        <div class="large" id="f"><%= link_to(image_tag("erias.png"), carnivals_path) %></div>
       </div>
     </a>
 
     <a class="flex items-stetch">
-      <div onMouseOut="hide('s')" onMouseOver="show('s')" style="padding-left: 18%;">
+      <div onMouseOut="hide('s')" onMouseOver="show('s')">
         <%= link_to(image_tag("n.png"), staffs_path) %>
       </div>
 
-      <div class="self-center">
-        <div class="large" id="s"> <%= link_to "osotros", staffs_path %> </div>
+      <div class="self-end">
+        <div class="large" id="s"><%= link_to(image_tag("osotros.png"), staffs_path) %></div>
       </div>
     </a>
 
@@ -52,34 +52,34 @@
   <div class="flex flex-wrap flex-grow"  style="padding-top: 2%">
 
     <a class="flex items-stetch">
-      <div onMouseOut="hide('c')" onMouseOver="show('c')" style="padding-left: 21%; padding-top:4%;">
+      <div onMouseOut="hide('c')" onMouseOver="show('c')">
         <%= link_to(image_tag("c.png"), contacto_path) %>
       </div>
 
       <div class="self-end">
-        <div class="large" id="c"> <%= link_to "conacto", contacto_path %> </div>
+        <div class="large" id="c"><%= link_to(image_tag("ontacto.png"), contacto_path) %></div>
       </div>
 
     </a>
 
     <a class="flex items-stetch">
-      <div onMouseOut="hide('r')" onMouseOver="show('r')" style="padding-left: 21%; padding-top:4%;">
+      <div onMouseOut="hide('r')" onMouseOver="show('r')">
         <%= link_to(image_tag("r.png"), artists_path) %>
       </div>
 
       <div class="self-end">
-        <div class="large" id="r"> <%= link_to "andom", artists_path %> </div>
+        <div class="large" id="r"><%= link_to(image_tag("andom.png"), artists_path) %></div>
       </div>
 
     </a>
 
     <a class="flex items-stetch">
-      <div onMouseOut="hide('m')" onMouseOver="show('m')" style="padding-left: 15%; ">
+      <div onMouseOut="hide('m')" onMouseOver="show('m')">
         <%= link_to(image_tag("m.png"), shows_path) %>
       </div>
 
-      <div class="self-center">
-        <div class="large" id="m"> <%= link_to "uestras", shows_path %> </div>
+      <div class="self-end">
+        <div class="large" id="m"><%= link_to(image_tag("uestras.png"), shows_path) %></div>
       </div>
 
     </a>
