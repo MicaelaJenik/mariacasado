@@ -38,5 +38,5 @@ import "scripts/index"
 // });
 
 import "controllers"
-import 'swiper/swiper-bundle.min.css'
-import 'swiper/css/bundle'
+// import 'swiper/swiper-bundle.min.css'
+// import 'swiper/css/bundle'
