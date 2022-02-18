@@ -1,0 +1,2 @@
+class Carnival < ApplicationRecord
+end

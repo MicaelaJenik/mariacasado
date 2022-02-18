@@ -1,0 +1,55 @@
+.container-index {
+  // padding: 8vw;
+}
+
+.first-row {
+  flex-wrap: wrap;
+}
+
+.artist-title {
+  padding: 1rem;
+  font-size: 12px;
+}
+
+.first-box {
+  border: solid;
+  border-width: 2px;
+  height:25vw;
+  width:20vw;
+  margin-bottom:15px;
+
+  img {
+
+  }
+}
+
+.second-box {
+  border: solid;
+  border-width: 2px;
+  height:30vw;
+  width:20vw;
+  margin-bottom:15px;
+}
+
+a {
+  &:hover:before {
+    color: red;
+  }
+}
+
+
+.collapse {
+  &:not(.show) {
+    display: none;
+  }
+}
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
+
+  &.collapse-horizontal {
+    width: 0;
+    height: auto;
+  }
+}

@@ -1,0 +1,39 @@
+.artist-titles {
+  height: 10vh;
+  width: 10vw;
+  margin: 3vw 12vw 7vw 14vw;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.letters {
+  height: 2px;
+}
+
+.swiper {
+  width: 1200px;
+  height: 800px;
+}
+
+.cursor {
+  cursor: url(image_path('yellowCircle.png')), auto;
+  height: 65px;
+  widows: 65px;
+  &:hover {
+    cursor: url(image_path('yellowCircle.png')), auto;
+  }
+    &:active {
+    cursor: url(image_path('yellowCircle.png')), auto;
+  }
+}
+
+.cursor-white {
+  cursor: url(image_path('whiteCircle.png')), auto;
+  &:hover {
+    cursor: url(image_path('whiteCircle.png')), auto;
+  }
+    &:active {
+    cursor: url(image_path('whiteCircle.png')), auto;
+  }
+}

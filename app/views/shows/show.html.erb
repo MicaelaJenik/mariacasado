@@ -1,0 +1,53 @@
+<div style="padding-top: 8%;">
+  <div style="padding-left: 10%;">
+    <div style="padding-bottom: 10%;">
+      <h2 class="xxlarge-thick mt-3 uppercase"><%= @show.title %></h2>
+      <h2 class="xlarge mt-3 font-extralight uppercase"><%= @show.about %></h2>
+      <h2 class="xlarge mt-3 font-extralight"><%= @show.curator %></h2>
+    </div>
+  </div>
+
+  <div class="flex" style="padding-bottom: 6%;">
+
+      <%= image_tag asset_path('antich1.jpg'), :style => "height :600px; padding-right: 50px;" %>
+      <%= image_tag asset_path('antich2.jpg'), :style => "height :600px;" %>
+
+
+  </div>
+
+  <div style="padding-left: 17%;">
+<!--     <div class="div" style="padding-bottom: 6%;">
+      <div class="py-4">
+        <%= image_tag asset_path('yellowLine.png')%>
+      </div>
+      <h2 class="xlarge-thick mt-3 uppercase">INFO</h2>
+    </div> -->
+
+    <div style="padding-bottom: 6%;">
+      <div class="pt-12 pb-4">
+        <%= image_tag asset_path('yellowLine.png')%>
+      </div>
+      <div class="flex">
+        <h2 class="xlarge mt-3"><%= @show.curator %></h2>
+      </div>
+      <h2 class="small font-extralight mt-8 pr-12 mr-12" style="line-height: 2em;;"><%= @show.details %></h2>
+    </div>
+
+    <div style="padding-bottom: 6%;">
+      <div class="pt-4 pb-8">
+        <%= image_tag asset_path('yellowLine.png')%>
+      </div>
+      <div class="flex items-center pt-2">
+        <div class="pr-3">
+          <h3 class="text-lg font-extralight font-thin text-sm px-3 py-1 btn flex flex-row-reverse hover:bg-yellow-300">CATÁLOGO ↓</h3>
+        </div>
+<!--         <div class="pr-3">
+          <h3 class="text-lg font-extralight font-thin text-sm px-3 py-1 btn flex flex-row-reverse hover:bg-yellow-300">GACETILLA ↓</h3>
+        </div> -->
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
