@@ -2,23 +2,23 @@
 ""
 <% end %>
 
-<div class="h-screen gris-fondo text-white">
+<div class="h-screen gris-fondo text-white pt-12">
 
 
-  <a>
+  <a style="padding-left: 40%;">
     <div class="flex items-stetch">
       <div onMouseOut="hide('a')" onMouseOver="show('a')">
         <%= link_to(image_tag("a.png"), artists_path) %>
       </div>
       <div class="self-end">
-        <div class="large" id="a"><%= link_to(image_tag("rtistas.png"), artists_path) %></div>
+        <div class="large pl-2" id="a"><%= link_to(image_tag("rtistas.png"), artists_path) %></div>
       </div>
     </div>
   </a>
 
-  <div class="flex flex-wrap space-between" style="padding-top: 2%">
+  <div class="flex flex-wrap space-between" style="padding-top: 9%;">
 
-    <a class="flex items-stetch">
+    <a class="flex items-stetch" style="padding-left: 15%">
       <div onMouseOut="hide('p')" onMouseOver="show('p')">
         <%= link_to(image_tag("p.png"), playlist_path) %>
       </div>
@@ -27,7 +27,7 @@
       </div>
     </a>
 
-    <a class="flex items-stetch">
+    <a class="flex items-stetch" style="padding-left: 5%">
       <div onMouseOut="hide('f')" onMouseOver="show('f')">
         <%= link_to(image_tag("f.png"), carnivals_path) %>
       </div>
@@ -37,7 +37,7 @@
       </div>
     </a>
 
-    <a class="flex items-stetch">
+    <a class="flex items-stetch" style="padding-left: 5%">
       <div onMouseOut="hide('s')" onMouseOver="show('s')">
         <%= link_to(image_tag("n.png"), staffs_path) %>
       </div>
@@ -49,9 +49,9 @@
 
   </div>
 
-  <div class="flex flex-wrap flex-grow"  style="padding-top: 2%">
+  <div class="flex flex-wrap flex-grow"  style="padding-top: 11%">
 
-    <a class="flex items-stetch">
+    <a class="flex items-stetch" style="padding-left: 5%">
       <div onMouseOut="hide('c')" onMouseOver="show('c')">
         <%= link_to(image_tag("c.png"), contacto_path) %>
       </div>
@@ -62,7 +62,7 @@
 
     </a>
 
-    <a class="flex items-stetch">
+    <a class="flex items-stetch" style="padding-left: 5%">
       <div onMouseOut="hide('r')" onMouseOver="show('r')">
         <%= link_to(image_tag("r.png"), artists_path) %>
       </div>
@@ -73,7 +73,7 @@
 
     </a>
 
-    <a class="flex items-stetch">
+    <a class="flex items-stetch" style="padding-left: 5%">
       <div onMouseOut="hide('m')" onMouseOver="show('m')">
         <%= link_to(image_tag("m.png"), shows_path) %>
       </div>
