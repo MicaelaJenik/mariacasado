@@ -8,7 +8,6 @@ require("@rails/ujs").start()
 require("@rails/activestorage").start()
 require("channels")
 
-import "stylesheets/application"
 import "scripts/index"
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -26,7 +25,6 @@ import "scripts/index"
 
 // External imports
 // import "bootstrap";
-import "../stylesheets/application"
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -39,3 +37,5 @@ import "../stylesheets/application"
 import "controllers"
 // import 'swiper/swiper-bundle.min.css'
 // import 'swiper/css/bundle'
+
+require("css/application.scss")
