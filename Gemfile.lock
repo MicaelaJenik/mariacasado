@@ -93,6 +93,8 @@ GEM
     erubi (1.10.0)
     execjs (2.7.0)
     ffi (1.15.5)
+    figaro (1.2.0)
+      thor (>= 0.14.0, < 2)
     font-awesome-sass (5.15.1)
       sassc (>= 1.11)
     forest_liana (7.4.5)
@@ -316,6 +318,7 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   cloudinary (~> 1.16.0)
+  figaro
   font-awesome-sass
   forest_liana
   jbuilder (~> 2.7)
